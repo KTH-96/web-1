@@ -4,35 +4,59 @@
 	<meta charset="utf-8">
 	<title>WEB-1</title>
 	<link rel="stylesheet" href="style.css">
-	
-</head>	
+
+</head>
 <body>
+	<input type="button" value="night" onclick="
+		var target = document.querySelector('body');
+		if(this.value === 'night' ){
+			target.style.backgroundColor = 'black';
+			target.style.color = 'white';
+			this.value = 'day';
+
+			var alist = document.querySelectorAll('a');
+			var i = 0;
+			for(i = 0; i<alist.length;i++){
+				alist[i].style.color = 'powderblue';
+			}
+		} else {
+			target.style.backgroundColor = 'white';
+			target.style.color = 'black';
+			this.value = 'night';
+
+			var alist = document.querySelectorAll('a');
+			var i = 0;
+			for(i = 0; i<alist.length;i++){
+				alist[i].style.color = 'black';
+			}
+		}
+		">
 
 	<h1 id="indexh1"><a href="index.html">WEB</a></h1>
-		
+
 			<iframe width="100%" height="502"
-			 src="https://www.youtube.com/embed/7T7r_oSp0SE?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb" 
-			 frameborder="0" 
-			 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+			 src="https://www.youtube.com/embed/7T7r_oSp0SE?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb"
+			 frameborder="0"
+			 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 			 allowfullscreen>
 			</iframe>
-		
+
 	<div id="grid" class="index">
-	
+
 		<ol>
 			<li><a href="1.html.html">HTML</a></li>
-		    <li><a href="2.css.html">CSS</a></li>
-		    <li><a href="3.javascript.html">JavaScript</a></li>
+		  <li><a href="2.css.html">CSS</a></li>
+		  <li><a href="3.javascript.html">JavaScript</a></li>
 		</ol>
-		
-		<div id="article">	
+
+		<div id="article">
 			<h2>WEB</h2>
-			<img src="img/window-1.jpg" width=50%;>	
+			<img src="img/window-1.jpg" width=50%;>
 				<p>
 					The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may be interlinked by hypertext, and are accessible over the Internet.[1][2] The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application called a web browser, and are published by a software application called a web server. The World Wide Web is not synonymous with the Internet, which pre-existed the Web in some form by over two decades and upon which technologies the Web is built.
 				</p>
-				
-		</div>	
-	</div>	
-</body>	
+
+		</div>
+	</div>
+</body>
 </html>

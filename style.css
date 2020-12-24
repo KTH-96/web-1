@@ -4,10 +4,10 @@
 			margin:0;
 		}
 	a {
-		color:black;
+		color:gray;
 		text-decoration: none;
 	}
-	
+
 	h1 {
 		font-size: 50px;
 		text-align: center;
@@ -56,4 +56,3 @@
 		border-bottom:2px solid gray;
 		border-top:2px solid gray;
 	}
-	
